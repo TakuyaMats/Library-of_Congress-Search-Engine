@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="./asset/style.css" />
+    <title>Git it Done</title>
+</head>
+
+<body class="flex-column min-100-vh">
+    <main class="flex-row justify-space-between">
+        <div class="col-12 col-md-4">
+
+            <div class="form-group">
+                <h3 class="card-header text-uppercase">Search By City</h3>
+                <div class="form-group">
+                    <label for="exampleInputCity1"></label>
+                    <input type="city" class="form-control" id="exampleInputCity" aria-describedby="cityHelp"
+                        placeholder="Enter City">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1"></label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>Manuscripts</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Search</button>
+                <button type="submit" class="btn btn-secondary">Go back.</button>
+            </div>
+
+            <div class="col-12 col-md-8">
+                <h2 class="subtitle">Showing results for Chicago <span id="repo-search-term"></span></h2>
+                <div id="repos-container" class="list-group"></div>
+            </div>
+    </main>
+
+    <script src="./assets/js/homepage.js"></script>
+</body>
+
+</html>
